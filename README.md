@@ -1,132 +1,395 @@
-Raise your hand if you’ve ever read a README file. Now, keep that hand raised if you’ve ever written a README file. I’m going to take a shot in the dark and assume that your hand is still raised; at least, it’s raised in spirit, since you probably refuse to flail your arms about like a crazy person just because I tell you to.
+<p align="center">
+ <img width="100px" src="https://res.cloudinary.com/anuraghazra/image/upload/v1594908242/logo_ccswme.svg" align="center" alt="GitHub Readme Stats" />
+ <h2 align="center">GitHub Readme Stats</h2>
+ <p align="center">Get dynamically generated GitHub stats on your readmes!</p>
+</p>
+  <p align="center">
+    <a href="https://github.com/anuraghazra/github-readme-stats/actions">
+      <img alt="Tests Passing" src="https://github.com/anuraghazra/github-readme-stats/workflows/Test/badge.svg" />
+    </a>
+    <a href="https://codecov.io/gh/anuraghazra/github-readme-stats">
+      <img src="https://codecov.io/gh/anuraghazra/github-readme-stats/branch/master/graph/badge.svg" />
+    </a>
+    <a href="https://github.com/anuraghazra/github-readme-stats/issues">
+      <img alt="Issues" src="https://img.shields.io/github/issues/anuraghazra/github-readme-stats?color=0088ff" />
+    </a>
+    <a href="https://github.com/anuraghazra/github-readme-stats/pulls">
+      <img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr/anuraghazra/github-readme-stats?color=0088ff" />
+    </a>
+    <br />
+    <br />
+    <a href="https://a.paddle.com/v2/click/16413/119403?link=1227">
+      <img src="https://img.shields.io/badge/Supported%20by-VSCode%20Power%20User%20%E2%86%92-gray.svg?colorA=655BE1&colorB=4F44D6&style=for-the-badge"/>
+    </a>
+    <a href="https://a.paddle.com/v2/click/16413/119403?link=2345">
+      <img src="https://img.shields.io/badge/Supported%20by-Node%20Cli.com%20%E2%86%92-gray.svg?colorA=61c265&colorB=4CAF50&style=for-the-badge"/>
+    </a>
+  </p>
 
-After code comments, the README file is one of the most ubiquitous forms of documentation found in software development today. While not every source code repository has a README, it’s a good bet that every successful one does. That’s because the README file, as the name compels, is often the first thing a developer reads when working with a new library. Going back to our literature metaphor, if code comments are the gloss, then the README file is the summary; if you can’t concisely explain the who, what, where, when, and why of your codebase, then the reader is likely to pick a competitor that can.
+  <p align="center">
+    <a href="#demo">View Demo</a>
+    ·
+    <a href="https://github.com/anuraghazra/github-readme-stats/issues/new/choose">Report Bug</a>
+    ·
+    <a href="https://github.com/anuraghazra/github-readme-stats/issues/new/choose">Request Feature</a>
+  </p>
+  <p align="center">
+    <a href="/docs/readme_fr.md">Français </a>
+    ·
+    <a href="/docs/readme_cn.md">简体中文</a>
+    ·
+    <a href="/docs/readme_es.md">Español</a>
+    ·
+    <a href="/docs/readme_de.md">Deutsch</a>
+    ·
+    <a href="/docs/readme_ja.md">日本語</a>
+    ·
+    <a href="/docs/readme_pt-BR.md">Português Brasileiro</a>
+    ·
+    <a href="/docs/readme_it.md">Italiano</a>
+    ·
+    <a href="/docs/readme_kr.md">한국어</a>
+  </p>
+</p>
+<p align="center">Loved the project? Please consider <a href="https://www.paypal.me/anuraghazra">donating</a> to help it improve!
 
-Anatomy of a README File
-While the README file is the de facto standard for relaying basic information about a software library, its actual format can vary wildly from project to project; the requirements and features of a package can strongly influence the content of a README file. The GNU Coding Standards, for example, explicitly requires a README file containing some basic information about what the package does and how it works, however other standards—such as the Mozilla Coding Standards—have no such requirement. That said, many high quality README files share a number of the same sections and components with one another:
+# Features
 
-Description
-Perhaps the most obvious component that nearly every README file should contain is a description of the project. Why was this project created, and what exactly does it do? While some projects devote several paragraphs to answering these questions, leave the life story to the marketing team and keep things simple here.
+- [GitHub Stats Card](#github-stats-card)
+- [GitHub Extra Pins](#github-extra-pins)
+- [Top Languages Card](#top-languages-card)
+- [Wakatime Week Stats](#wakatime-week-stats)
+- [Themes](#themes)
+- [Customization](#customization)
+- [Deploy Yourself](#deploy-on-your-own-vercel-instance)
 
+# GitHub Stats Card
 
-Example: Faker (https://github.com/fzaninotto/Faker)
-Requirements
-If the project description is the most obvious component of a README file, then requirements is the most important. As a developer, there is nothing more frustrating than trying to install a new package or tool only to find out an hour in that you are running the wrong version of MS-DOS on your MacBook Pro.
+Copy-paste this into your markdown content, and that's it. Simple!
 
+Change the `?username=` value to your GitHub's username.
 
-Example: Composer (https://github.com/composer/composer)
-Installation
-Whether a project is a library, framework, product, or even a programming language, it is always crucial to outline the steps needed to start using it. In some cases, this section is as simple as a one-line installation command, while others are significantly more involved. No matter the complexity, if the consumers and potential contributors of your package don’t know how to install it, then they aren’t likely to waste much time trying to use it.
+```md
+[![Anurag's github stats](https://github-readme-stats.vercel.app/api?username=anuraghazra)](https://github.com/anuraghazra/github-readme-stats)
+```
 
+_Note: Ranks are calculated based on user's stats, see [src/calculateRank.js](./src/calculateRank.js)_
 
-Example: TypeScript (https://github.com/Microsoft/TypeScript)
-Examples
-Often combined with the installation steps as a “Getting Started” section, examples provide the quickest route for users to start using a project. As developers, we tend to learn by doing, so providing even the most basic “Hello World” is a great way to demonstrate the power and usability of a package. While it can be tempting to throw in only one example, or a couple dozen, balance is key here. Identifying and demonstrating the most common use cases for a library, language, or framework can go a long way towards getting users hooked.
+### Hiding individual stats
 
+To hide any specific stats, you can pass a query parameter `?hide=` with comma-separated values.
 
-Example: API Blueprint (https://github.com/apiaryio/api-blueprint)
-Configuration
-Beyond the initial “Getting Started” steps, many projects require some basic configuration—or they offer more advanced configuration methods beyond the initial setup. While it isn’t necessary to go into excruciating detail in outlining configuration options within your README, identifying how and where to configure your project can help readers feel more confident in your package’s ability to meet their personal needs.
+> Options: `&hide=stars,commits,prs,issues,contribs`
 
+```md
+![Anurag's github stats](https://github-readme-stats.vercel.app/api?username=anuraghazra&hide=contribs,prs)
+```
 
-Example: CarrierWave (https://github.com/carrierwaveuploader/carrierwave)
-Contributing
-Open source projects are often a team effort, but what makes them unique is that team consists of a group of disparate people who may have never met before. This type of community presents a challenge, as there are no managers or employees, and everyone’s time is volunteered. To help wrangle the potential chaos, many projects include guidelines in their README about how to contribute positively to the project. From style guides to codes of conduct, outlining the rules of engagement are a great way to ensure that everyone is on the same page right out of the gate.
+### Adding private contributions count to total commits count
 
+You can add the count of all your private contributions to the total commits count by using the query parameter `?count_private=true`.
 
-Example: Bootstrap (https://github.com/twbs/bootstrap)
-Testing
-In the same vein as contribution guidelines, testing steps are often included in the README of popular open source projects in order to ensure that contributors know exactly how to test any potential code changes against the test suite. While unit testing is a widely adopted process, no two projects setup their test suite exactly the same way, which means that some handholding might be necessary to get new contributors off to the right start.
+_Note: If you are deploying this project yourself, the private contributions will be counted by default otherwise you need to chose to share your private contribution counts._
 
+> Options: `&count_private=true`
 
-Example: jQuery (https://github.com/jquery/jquery)
-Licensing
-Every project is released under some sort of license. While MIT is one of the most common for newer projects, there are dozens of potential licenses to use, so it is important to clearly identify the one chosen for your project. Can users make money off of it? Can they resell it? Are you liable for any issues that arise? The license defines exactly what users are allowed to do with your software, so it isn’t a decision to take lightly.
+```md
+![Anurag's github stats](https://github-readme-stats.vercel.app/api?username=anuraghazra&count_private=true)
+```
 
+### Showing icons
 
-Example: Language Ruby on Rails (https://github.com/rails/rails)
-Further Reading
-While important, the README file isn’t generally meant to be the end-all-be-all of documentation. Many projects require detailed documentation that goes far outside the scope of what is appropriate for a README. For example, programming languages and frameworks often use their README to provide some basic outline on the project itself, and then link out to a more robust documentation site to convey usage, examples, and syntax. Additionally, many projects highlight developers who have made significant contributions to the project, or even information about where to find their communities.
+To enable icons, you can pass `show_icons=true` in the query param, like so:
 
-There is no hard and fast rule about what can and can’t go into a README file, but a good rule of thumb is to consider where and how you intend to communicate with your users. In the case of highly technical open sourced projects like programming languages, development tools, and libraries, the README file is the perfect place to give thanks, offer support, and guide users towards more appropriate destinations to address their needs.
+```md
+![Anurag's github stats](https://github-readme-stats.vercel.app/api?username=anuraghazra&show_icons=true)
+```
 
+### Themes
 
+With inbuilt themes, you can customize the look of the card without doing any [manual customization](#customization).
 
-POSSOMSAUCE
+Use `?theme=THEME_NAME` parameter like so :-
 
-This library randomly disables network access to various nodes within a Kubernetes cluster in order to stress test load balancing and failover functionality.
+```md
+![Anurag's github stats](https://github-readme-stats.vercel.app/api?username=anuraghazra&show_icons=true&theme=radical)
+```
 
-INSTALLATION
+#### All inbuilt themes :-
 
-To install Possomsauce, run the following command from your terminal:
+dark, radical, merko, gruvbox, tokyonight, onedark, cobalt, synthwave, highcontrast, dracula
 
-emerge -atv possomsauce
-Example: Plain-text README File
+<img src="https://res.cloudinary.com/anuraghazra/image/upload/v1595174536/grs-themes_l4ynja.png" alt="GitHub Readme Stat Themes" width="600px"/>
 
-Plain text README files are boring.
+You can look at a preview for [all available themes](./themes/README.md) or checkout the [theme config file](./themes/index.js) & **you can also contribute new themes** if you like :D
 
-While the snippet above is good enough to get basic information from, the larger the README gets, the more difficult it can be to parse. This presents both a usability problem, as well as a marketing one. To address these issues, let’s take a look at that same snippet, but with some Markdown added for flavor.
+### Customization
 
-# INTRODUCTION
+You can customize the appearance of your `Stats Card` or `Repo Card` however you want with URL params.
 
-This library randomly disables network access to various nodes within a [Kubernetes](https://kubernetes.io/) cluster in order to stress test load balancing and failover functionality.
+#### Common Options:
 
-## INSTALLATION
+- `title_color` - Card's title color _(hex color)_
+- `text_color` - Body text color _(hex color)_
+- `icon_color` - Icons color if available _(hex color)_
+- `bg_color` - Card's background color _(hex color)_ **or** a gradient in the form of _angle,start,end_
+- `hide_border` - Hides the card's border _(boolean)_
+- `theme` - name of the theme, choose from [all available themes](./themes/README.md)
+- `cache_seconds` - set the cache header manually _(min: 1800, max: 86400)_
 
-To install Possomsauce, run the following command from your terminal:
+##### Gradient in bg_color
+
+You can provide multiple comma-separated values in bg_color option to render a gradient, the format of the gradient is :-
 
 ```
-emerge -atv possomsauce
+&bg_color=DEG,COLOR1,COLOR2,COLOR3...COLOR10
 ```
-Example: Markdown README File
 
-Example: Rendered Markdown README File
-Better, right?
+> Note on cache: Repo cards have a default cache of 4 hours (14400 seconds) if the fork count & star count is less than 1k, otherwise, it's 2 hours (7200 seconds). Also, note that the cache is clamped to a minimum of 2 hours and a maximum of 24 hours
 
-The beauty of Markdown is that it is a relatively minimal markup language, and has an incredibly low learning curve, which means that you can add some impressive style to a plain-text file with little time and effort.
+#### Stats Card Exclusive Options:
 
-Hell, I’m writing this in Markdown as we speak.
+- `hide` - Hides the specified items from stats _(Comma-separated values)_
+- `hide_title` - _(boolean)_
+- `hide_rank` - _(boolean)_
+- `hide_border` - _(boolean)_
+- `show_icons` - _(boolean)_
+- `include_all_commits` - Count total commits instead of just the current year commits _(boolean)_
+- `count_private` - Count private commits _(boolean)_
+- `line_height` - Sets the line-height between text _(number)_
+- `custom_title` - Sets a custom title for the card
 
-Usability Matter
-Formatting a README file using a markup language like Markdown is beneficial, but it is only half the puzzle. The other half is taking usability into consideration. While UI/UX isn’t often something we think of when working with code, it is always important to consider your end-users no matter what you’re building. In the case of README files on GitHub, considering how to convey information in a clean and easily-digestible way can go a long way towards satisfying readers.
+#### Repo Card Exclusive Options:
 
-Badges
-If you’ve ever read a README file in a GitHub repository, you’ve no doubt seen your fair share of badges. Badges are graphical tags that are often included in GitHub README files as a way of conveying basic information about a project. These little tags usually come in the form of a key-value pair, rendered as a primarily dichromatic image.
+- `show_owner` - Show the owner name of the repo _(boolean)_
 
+#### Language Card Exclusive Options:
 
+- `hide` - Hide the languages specified from the card _(Comma-separated values)_
+- `hide_title` - _(boolean)_
+- `hide_border` - _(boolean)_
+- `layout` - Switch between two available layouts `default` & `compact`
+- `card_width` - Set the card's width manually _(number)_
+- `langs_count` - Show more languages on the card, between 1-10, defaults to 5 _(number)_
+- `exclude_repo` - Exclude specified repositories _(Comma-separated values)_
+- `custom_title` - Sets a custom title for the card
 
+> :warning: **Important:**
+> Language names should be uri-escaped, as specified in [Percent Encoding](https://en.wikipedia.org/wiki/Percent-encoding)
+> (i.e: `c++` should become `c%2B%2B`, `jupyter notebook` should become `jupyter%20notebook`, etc.)
 
+#### Wakatime Card Exclusive Options:
 
-While badges can technically contain any number of useful statistics, the most common use for them is to provide information about the health and popularity of a project. Code coverage, build status, license, current version, number of downloads… badges can be used to convey a lot of information in a very little space, and often indicate a higher level of professionalism and support behind a project.
+- `hide_title` - _(boolean)_
+- `line_height` - Sets the line-height between text _(number)_
+- `hide_progress` - Hides the progress bar and percentage _(boolean)_
+- `custom_title` - Sets a custom title for the card
 
-Screenshots & Animations
-Not every software project is text-based in nature. There are countless of graphical libraries that are better demonstrated using screenshots and animations in addition to standard text-based documentation. While it’s probably best not to litter a README file with needless screenshots, including a relevant screenshot or animation at the top of a project’s README can go a long way towards quickly and easily demonstrating its power.
+---
 
+# GitHub Extra Pins
 
-Example: The Fuck (https://github.com/nvbn/thefuck)
+GitHub extra pins allow you to pin more than 6 repositories in your profile using a GitHub readme profile.
 
-Keep in mind that, just because a project isn’t graphical in nature, doesn’t mean that its documentation can’t benefit from screenshots and animations. Many command-line utilities can be more effectively demonstrated using a real-world screenshot than copying and pasting the output of the application.
+Yay! You are no longer limited to 6 pinned repositories.
 
-Code Highlighting
-Software development tools have improved a lot since the days of white text on blue screens. One of the many improvements that have been made to code editors in the last 40 years is code highlighting, a process that color codes characters within source code to help developers scan and identify code more efficiently. Code highlighting is so ubiquitous that you’d be hard pressed to find a developer who doesn’t use it, so why then should our README files be any different?
+### Usage
 
-While most markup languages offer some form of code highlighting, highlighting code snippets in Markdown is about as straightforward as it comes. By tagging them with the name of the programming language, Markdown code blocks can be turned from this:
+Copy-paste this code into your readme and change the links.
 
-class Hello
-  def self.world
-    puts "Hello, world!"
-  end
-end
+Endpoint: `api/pin?username=anuraghazra&repo=github-readme-stats`
 
-Obviously, code highlighting won’t improve the content of a README file, but what it will do is make it easier for consumers to parse code snippets contained within it. This helps reduce strain, and contextualizes code in a way that readers can immediately understand.
+```md
+[![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=anuraghazra&repo=github-readme-stats)](https://github.com/anuraghazra/github-readme-stats)
+```
 
-Emojis
-The true beauty of GitHub’s markup renderer isn’t the number of languages it supports; it’s the post-processing that it performs. While the majority of the actions GitHub’s render takes to process a markup file are designed to reduce load times 🕒 and increase security 🔒, one particular feature that is getting increasing use is the emoji parser, and let’s face it… emojis are here to stay. They’re so damn popular that some maniac actually made a movie 🎥 about them. The problem with emojis, however, is that outside of a smartphone 📱 they are a huge pain in the ass to type unless you are using an application that natively support emoji shortcuts.
+### Demo
 
-With GitHub flavored markup, adding emojis to a README is nearly as simple as adding an emoji to a Tweet—or whatever the kids are using these days 🚀. Whenever GitHub’s markup renderer encounters something that looks like :emojiname:, it attempts to look up the indicated emoji and, if found, renders it instead of the tag ⚡. This allows you to add relevant (and hopefully appropriate) emojis within a README file in plain text, without having to muck around on Emojipedia 📖.
+[![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=anuraghazra&repo=github-readme-stats)](https://github.com/anuraghazra/github-readme-stats)
 
-Keep It Simple, Stupid
-There’s a fine line between a lot of information, and way too much information. While there’s no rule dictating just how much information is too much in a README file, it’s important to remember our “README = summary” analogy from the literary metaphor above. The size and complexity of a project will strongly dictate the length of a README file, just like the size and complexity of a book will determine how detailed the summary is, but if you’re not careful you can move from writing a summary into writing CliffsNotes without even realizing it.
+Use [show_owner](#customization) variable to include the repo's owner username
 
-Conclusion
-Write a README, because you can sure as hell expect your users to actually READ IT. Outlining how to get started with a new project is an important onboarding step for new users, and a great refresher course for returning users. The README is the perfect place to communicate—at minimum—the basic information required to use a new library or framework, and while not every project warrants dedicated documentation, they should all have a thoughtful, usable README.
+[![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=anuraghazra&repo=github-readme-stats&show_owner=true)](https://github.com/anuraghazra/github-readme-stats)
+
+# Top Languages Card
+
+The top languages card shows a GitHub user's top languages which have used the most.
+
+_NOTE: Top Languages does not indicate my skill level or anything like that, it's a GitHub metric of which languages have the most code on GitHub. It's a new feature of github-readme-stats._
+
+### Usage
+
+Copy-paste this code into your readme and change the links.
+
+Endpoint: `api/top-langs?username=anuraghazra`
+
+```md
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=anuraghazra)](https://github.com/anuraghazra/github-readme-stats)
+```
+
+### Exclude individual repositories
+
+You can use `?exclude_repo=repo1,repo2` parameter to exclude individual repositories.
+
+```md
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=anuraghazra&exclude_repo=github-readme-stats,anuraghazra.github.io)](https://github.com/anuraghazra/github-readme-stats)
+```
+
+### Hide individual languages
+
+You can use `?hide=language1,language2` parameter to hide individual languages.
+
+```md
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=anuraghazra&hide=javascript,html)](https://github.com/anuraghazra/github-readme-stats)
+```
+
+### Show more languages
+
+You can use the `&langs_count=` option to increase or decrease the number of languages shown on the card. Valid values are integers between 1 and 10 (inclusive), and the default is 5.
+
+```md
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=anuraghazra&langs_count=8)](https://github.com/anuraghazra/github-readme-stats)
+```
+
+### Compact Language Card Layout
+
+You can use the `&layout=compact` option to change the card design.
+
+```md
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=anuraghazra&layout=compact)](https://github.com/anuraghazra/github-readme-stats)
+```
+
+### Demo
+
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=anuraghazra)](https://github.com/anuraghazra/github-readme-stats)
+
+- Compact layout
+
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=anuraghazra&layout=compact)](https://github.com/anuraghazra/github-readme-stats)
+
+# Wakatime Week Stats
+
+Change the `?username=` value to your [Wakatime](https://wakatime.com) username.
+
+```md
+[![willianrod's wakatime stats](https://github-readme-stats.vercel.app/api/wakatime?username=willianrod)](https://github.com/anuraghazra/github-readme-stats)
+```
+
+### Demo
+
+[![willianrod's wakatime stats](https://github-readme-stats.vercel.app/api/wakatime?username=willianrod)](https://github.com/anuraghazra/github-readme-stats)
+
+[![willianrod's wakatime stats](https://github-readme-stats.vercel.app/api/wakatime?username=willianrod&hide_progress=true)](https://github.com/anuraghazra/github-readme-stats)
+
+---
+
+### All Demos
+
+- Default
+
+![Anurag's github stats](https://github-readme-stats.vercel.app/api?username=anuraghazra)
+
+- Hiding specific stats
+
+![Anurag's github stats](https://github-readme-stats.vercel.app/api?username=anuraghazra&hide=contribs,issues)
+
+- Showing icons
+
+![Anurag's github stats](https://github-readme-stats.vercel.app/api?username=anuraghazra&hide=issues&show_icons=true)
+
+- Include All Commits
+
+![Anurag's github stats](https://github-readme-stats.vercel.app/api?username=anuraghazra&include_all_commits=true)
+
+- Themes
+
+Choose from any of the [default themes](#themes)
+
+![Anurag's github stats](https://github-readme-stats.vercel.app/api?username=anuraghazra&show_icons=true&theme=radical)
+
+- Gradient
+
+![Anurag's github stats](https://github-readme-stats.vercel.app/api?username=anuraghazra&bg_color=30,e96443,904e95&title_color=fff&text_color=fff)
+
+- Customizing stats card
+
+![Anurag's github stats](https://github-readme-stats.vercel.app/api/?username=anuraghazra&show_icons=true&title_color=fff&icon_color=79ff97&text_color=9f9f9f&bg_color=151515)
+
+- Customizing repo card
+
+![Customized Card](https://github-readme-stats.vercel.app/api/pin?username=anuraghazra&repo=github-readme-stats&title_color=fff&icon_color=f9f9f9&text_color=9f9f9f&bg_color=151515)
+
+- Top languages
+
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=anuraghazra)](https://github.com/anuraghazra/github-readme-stats)
+
+- Wakatime card
+
+[![willianrod's wakatime stats](https://github-readme-stats.vercel.app/api/wakatime?username=willianrod)](https://github.com/anuraghazra/github-readme-stats)
+
+---
+
+### Quick Tip (Align The Repo Cards)
+
+You usually won't be able to layout the images side by side. To do that you can use this approach:
+
+```md
+<a href="https://github.com/anuraghazra/github-readme-stats">
+  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=anuraghazra&repo=github-readme-stats" />
+</a>
+<a href="https://github.com/anuraghazra/convoychat">
+  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=anuraghazra&repo=convoychat" />
+</a>
+```
+
+## Deploy on your own Vercel instance
+
+#### [Check Out Step By Step Video Tutorial By @codeSTACKr](https://youtu.be/n6d4KHSKqGk?t=107)
+
+Since the GitHub API only allows 5k requests per hour, my `https://github-readme-stats.vercel.app/api` could possibly hit the rate limiter. If you host it on your own Vercel server, then you don't have to worry about anything. Click on the deploy button to get started!
+
+NOTE: Since [#58](https://github.com/anuraghazra/github-readme-stats/pull/58) we should be able to handle more than 5k requests and have no issues with downtime :D
+
+[![Deploy to Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/anuraghazra/github-readme-stats)
+
+<details>
+ <summary><b> Guide on setting up Vercel  🔨 </b></summary>
+
+1. Go to [vercel.com](https://vercel.com/)
+1. Click on `Log in`
+   ![](https://files.catbox.moe/tct1wg.png)
+1. Sign in with GitHub by pressing `Continue with GitHub`
+   ![](https://files.catbox.moe/btd78j.jpeg)
+1. Sign into GitHub and allow access to all repositories, if prompted
+1. Fork this repo
+1. Go back to your [Vercel dashboard](https://vercel.com/dashboard)
+1. Select `Import Project`
+   ![](https://files.catbox.moe/qckos0.png)
+1. Select `Import Git Repository`
+   ![](https://files.catbox.moe/pqub9q.png)
+1. Select root and keep everything as is, just add your environment variable named PAT_1 (as shown), which will contain a personal access token (PAT), which you can easily create [here](https://github.com/settings/tokens/new) (leave everything as is, just name it something, it can be anything you want)
+   ![](https://files.catbox.moe/0ez4g7.png)
+1. Click deploy, and you're good to go. See your domains to use the API!
+
+</details>
+
+## :sparkling_heart: Support the project
+
+I open-source almost everything I can, and I try to reply to everyone needing help using these projects. Obviously,
+this takes time. You can use this service for free.
+
+However, if you are using this project and happy with it or just want to encourage me to continue creating stuff, there are few ways you can do it :-
+
+- Giving proper credit when you use github-readme-stats on your readme, linking back to it :D
+- Starring and sharing the project :rocket:
+- [![paypal.me/anuraghazra](https://ionicabizau.github.io/badges/paypal.svg)](https://www.paypal.me/anuraghazra) - You can make one-time donations via PayPal. I'll probably buy a ~~coffee~~ tea. :tea:
+
+Thanks! :heart:
+
+---
+
+![https://vercel.com](https://res.cloudinary.com/anuraghazra/image/upload/v1597827714/powered-by-vercel_1_ug4uro.svg)
+
+Contributions are welcome! <3
+
+Made with :heart: and JavaScript.
